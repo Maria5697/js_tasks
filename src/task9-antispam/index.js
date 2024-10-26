@@ -7,9 +7,9 @@
  * @returns {Boolean}
  */
 export const isSpam = (text, keywords) => {
-    // Приводим текст к нижнему регистру для регистронезависимого поиска
+    
     const lowerText = text.toLowerCase();
     
-    // Проверяем, содержится ли хотя бы одно ключевое слово в тексте
+    
     return keywords.some(keyword => lowerText.includes(keyword.toLowerCase()));
 };
